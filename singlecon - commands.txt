@@ -1,0 +1,19 @@
+
+
+####SINGLE CONTAINER LAB COMMANDS
+
+
+kubectl apply -f singlecon.yml     #execute the singlecontainer.yml file 
+
+kubectl get pods    #get the list of the pods
+
+
+kubectl get pods -o wide    #get the list of the pods with other detaisl like ip of the pod and in which node it is created
+
+kubectl logs -f testpod     # give hello akshat as output to come out of it press ctrl c
+
+kubectl get nodes   # wull give the nodes list
+
+kubectl describe pod testpod  #describe what exacltly is happening in pod testpod
+
+kubectl exec testpod -it -c c00 -- /bin/bash     #enter inside the container c00 which is presrnt in the pod testpod 
